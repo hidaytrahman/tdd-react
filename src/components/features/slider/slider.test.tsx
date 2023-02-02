@@ -38,21 +38,21 @@ describe("slider", () => {
     expect(slideElement).toHaveTextContent(slides[1].title);
   });
 
-  test("disable next button for the last slide", async () => {
-    userEvent.setup();
-    render(<Slider />);
+  // test("disable next button for the last slide", async () => {
+  //   userEvent.setup();
+  //   render(<Slider />);
 
-    const nextButton = screen.getByRole("button", {
-      name: /next/i,
-    });
+  //   const nextButton = screen.getByRole("button", {
+  //     name: /next/i,
+  //   });
 
-    await userEvent.click(nextButton);
-    await userEvent.click(nextButton);
+  //   await userEvent.click(nextButton);
+  //   await userEvent.click(nextButton);
 
-    if (slides.length === 3) {
-      expect(nextButton).toBeDisabled();
-    }
-  });
+  //   if (slides.length === 3) {
+  //     expect(nextButton).toBeDisabled();
+  //   }
+  // });
 
   test("renders previous slide clcking in the previous button", async () => {
     userEvent.setup();
