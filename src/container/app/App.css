@@ -1,0 +1,30 @@
+body {
+  padding: 1rem;
+}
+
+.app {
+  max-width: 966px;
+  margin: 0 auto;
+  background-color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.app article {
+  height: 300px;
+  margin: 10px 0;
+}
+
+article,
+header,
+footer {
+  background-color: beige;
+  padding: 1rem;
+}
